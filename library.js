@@ -8,12 +8,47 @@ function Book(id, title, author, pages, publicationYear, read) {
 }
 
 var myLibrary = [
-  new Book("The Great Gatsby", "F. Scott Fitzgerald", 180, "1925", true),
-  new Book("To Kill a Mockingbird", "Harper Lee", 281, "1960", true),
-  new Book("1984", "George Orwell", 328, "1949", false),
-  new Book("Pride and Prejudice", "Jane Austen", 279, "1813", true),
-  new Book("The Catcher in the Rye", "J.D. Salinger", 277, "1951", false),
-  new Book("The Hobbit", "J.R.R. Tolkien", 310, "1937", true),
+  new Book(
+    crypto.randomUUID(),
+    "The Great Gatsby",
+    "F. Scott Fitzgerald",
+    180,
+    "1925",
+    true
+  ),
+  new Book(
+    crypto.randomUUID(),
+    "To Kill a Mockingbird",
+    "Harper Lee",
+    281,
+    "1960",
+    true
+  ),
+  new Book(crypto.randomUUID(), "1984", "George Orwell", 328, "1949", false),
+  new Book(
+    crypto.randomUUID(),
+    "Pride and Prejudice",
+    "Jane Austen",
+    279,
+    "1813",
+    true
+  ),
+  new Book(
+    crypto.randomUUID(),
+    "The Catcher in the Rye",
+    "J.D. Salinger",
+    277,
+    "1951",
+    false
+  ),
+  new Book(
+    crypto.randomUUID(),
+    "The Hobbit",
+    "J.R.R. Tolkien",
+    310,
+    "1937",
+    true
+  ),
 ];
 
 const addModal = new bootstrap.Modal(document.querySelector(".add-modal"));
